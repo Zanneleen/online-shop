@@ -1,0 +1,226 @@
+/*BEGINNING OF HOME PAGE CSS */
+#homePage {
+    background-color: white;
+}
+
+.navbar {
+    border-bottom: 2px solid #F3B9D9;
+    /*pink colour*/
+    box-shadow: 0 3px 4px -1px rgba(0, 0, 0, 0.25);
+    padding: 5px;
+}
+
+#homePageParagraph {
+    text-align: center;
+    font-family: "George", serif;
+    font-size: 17px;
+}/*Paragraph on home page belowe logo*/
+
+#homePageLogo {
+    padding-top: 20px;
+    border: 0px;
+    /* [1] The container (HOVER CSS FOR LOGO ON HOME PAGE) */
+    height: 400px;
+    overflow: hidden;
+    /* [2] Transition property for smooth transformation of images */
+    transition: transform .5s ease;
+}/*main logo on home page*/
+
+#homePageLogo:hover {
+    /* [3] Finally, transforming the image when container gets hovered */
+    transform: scale(1.2);
+}
+    /*END OF HOME PAGE CSS/*
+/*BEGINNING OF CATALOGUE PAGE CSS CSS*/
+ #cataloguePage{
+            background-color: white;
+        }
+    #allScrunchies {/*This element is for all the picture icons on the catalogue page*/
+        height: 200px;
+        padding: 1px;
+        border:1px solid #F3B9D9 ;
+        filter: grayscale(10%) ;
+        filter: contrast(90%) ;
+        filter: brightness(100%); 
+        /* [1] The container (HOVER CSS FOR ALL SCRUNCHIE IMAGES)*/
+    height: 200px;
+    overflow: hidden;
+    /* [2] Transition property for smooth transformation of images */
+    transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+#allScrunchies:hover {/*This element hovers over the scrunchie icons on the home page*/
+    transform: scale(1.2);
+    border: none;
+    padding: 0;
+}
+#textUnderneathImages, .shop-item-price {/*The text underneath the icons on catalogue page*/
+    text-align: center;
+    font-family: "Georgia", serif;
+    font-size: 14px;
+}
+
+
+
+/*catalogue table*/
+#GroupA, #GroupB {
+    background-color: white;
+}
+
+tbody {
+    background-color: #DFDFE2;
+}
+
+
+#moreButton {/*The button used to give more information onclick about the scrunchie*/
+    float: right;
+}
+/*CART CSS WILL ON CATALOGUE PAGE*//
+.cart-header {
+  font-weight: bold;
+    font-size: 1.25em;
+    color: #333;  
+}/*header above cart*/
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}/*headers in cart colums*/
+
+.cart-row {
+    display: flex;
+}/*rows in cart*/
+
+.cart-item {
+    width: 45%;
+}/*cart-item column in cart*/
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}/*cart-price column in cart*/
+
+.cart-quantity {
+    width: 35%;
+}/*cart-quantity column in cart*/
+
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size:16px;
+   /* font-size: 1.2em;*/
+}/*css for the cart-item-title that will display in the cart*/
+
+.cart-item-image {
+    width: 90px;
+    height: auto;
+    border-radius: 10px;
+}/*css for the cart-item-image that will display in the cart*/
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}/*css for the cart-quantity-input that will display in the cart*/
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    }/*remove btn that displays when a item is added to the cart*/
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}/*cart-total in cart*/
+
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}/*Total title css on bottom of cart*/
+.cart-total-discount{
+    margin-right:20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}/*total price css on bottom of cart*/
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}/*purchase button on bottom of cart. The background pink background color for all the buttons is inside the js file in the jquery section*/
+
+/*accordion css in catalogue html*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 11px;
+  transition: 0.4s;
+}
+
+
+
+.panel {
+  padding: 0 13px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+#accordionText{
+    font-size:13px;
+}
+/*End of Catalogue Page CSS*/
+/*Order page CSS*/
+ #orderPage{
+            background-color: white;
+        }
+
+    #orderForm{/*This element covers the whole "order form"*/
+        font-family:"Arial" ;
+        font-size: 16px;
+    }
+    #ourAddress{/*Business address on top right corner of order page*/
+        float: right;
+        padding-top: 10px;
+    }
+  /*End of order page CSS*/

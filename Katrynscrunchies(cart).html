@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CSS link to external file-->
+    <link href="KatrynscrunchiesCss.css" rel="stylesheet" type="text/css">
+    <!--JQuery link-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--JS external link-->
+    <script src="Katrynscrunchies.js" async></script><!--async to load javascript file in the background-->
+    <title>Cart</title>
+    <!--On the cart(order) page all of the items is displayed, you can add them to the cart and more information is displayed with accordion-->
+
+</head>
+
+<!--navbar below-->
+<body  id="cataloguePage">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li><a class="navbar-brand" href="Katrynscrunchies(home).html">Katrynscrunchies.com</a>
+                        </li><!--Navbar item:Katrynscrunchies links to home page-->
+                        <li class="nav-item active">
+                            <div class="nav-link"> <a href="Katrynscrunchies(catalogue).html" style="color:black"><b>Catalogue</b> </a>
+                            </div>
+                        </li><!--Navbar-item:Catalogue page-->
+                        <li class="nav-item active">
+                            <div class="nav-link"> <a href="KatrynScrunchies(cart).html" style="color:black"><b>Cart</b> </a>
+                            </div>
+                        </li><!--Navbar item:Order page-->
+                    </ul>
+                    <div class="icons"><!--On the right side of the navbar-->
+                        <ul class=" nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.instagram.com/katryn.scrunchies/"><img src="images/icons/instagram.jpg" title="Instagram logo" alt="Instagram"></a><!--Instagram logo-->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:katryn.scrunchies@gmail.com"><img src="images/icons/email.jpg" title="Email logo" alt="Email"></a><!--Email logo-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="container content-section">
+        <h1 class="display-3" id="itemsHeading">Items listed</h1><!--On top of page-->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="h3" colspan="4" id="GroupA" style=""><b> Group A </b>
+                    </th><!--Title of first section of table-->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="shop-items">
+                        <div class="shop-item">
+                            <div class="img-hover-zoom"><!--Zooms in on image when it's hovered upon-->
+                                <img src="images/black.png" class="img-thumbnail shop-item-image" alt="blackscrunchie" id="allScrunchies">
+                            </div>
+                            <div id="shop-item-details">
+                                    <span id="textUnderneathImages" class="shop-item-title"> Black coloured scrunchie</span>
+                                    <div class="shop-item-price"> <p><b>R30</b></p> </div>                            
+                             </div><!--end of shop-item-details-->
+                            <!--beginning of accordion-->
+                            <button class="accordion">Click for more information</button>
+                                <div class="panel">
+                                    <p id="accordionText">
+                                        This is a black coloured scrunchie.<br>
+                                        The material is hard and shiny. 
+                                        <br>
+                                        <br>
+                                        Limited stock is available
+                                        
+                                    </p>
+                                </div><!--end of class="panel"-->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div><!--end of shop-item-->
+                        <!--end of accordion-->
+ 
+                    </td>
+                    <td>
+                        <div class="shop-item">
+                            <div class="img-hover-zoom"><!--Zooms in on image when it's hovered upon-->
+                                <img src="images/bluewhite.png" class="img-thumbnail shop-item-image" alt="stripedscrunchie" id="allScrunchies">
+                            </div>
+                        
+                            <div id="shop-item-details">
+                                <span id="textUnderneathImages" class="shop-item-title">Blue and white striped scrunchie.   </span>                           
+                                <div class="shop-item-price"> <p><b>R30</b></p></div>
+                                
+                            </div><!--end of shop-item-details-->
+                            <!--Beginning of accordion-->
+                            <button class="accordion">Click for more information</button>
+                                <div class="panel">
+                                    <p id="accordionText">
+                                        This is a blue and white striped scrunchie.<br>
+                                        The material is hard. 
+                                        <br>
+                                        <br>
+                                        Limited stock is available
+                                        
+                                    </p>
+                                </div><!--end of class="panel"-->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div><!--end of shop-item-->
+                        <!--end of accordion-->
+                    </td>
+                    <td>
+                        <div class="shop-item">
+                            <div class="img-hover-zoom"><!--Zooms in on image when it's hovered upon-->
+                                <img src="images/yellow.png" alt="yellowscrunchie" class="img-thumbnail shop-item-image" id="allScrunchies">
+                            </div>
+
+                            <div id="shop-item-details">
+                                <span id="textUnderneathImages" class="shop-item-title">Yellow coloured scrunchie.        </span>                        
+                                <div class="shop-item-price"> <p><b>R30</b></p></div>
+                                
+                            </div><!--end of shop-item-details-->
+                            <!--Beginning of accordion-->
+                            <button class="accordion">Click for more information</button>
+                                <div class="panel">
+                                    <p id="accordionText">
+                                        This is a yellow coloured scrunchie.<br>
+                                        The material is soft and shiny. 
+                                        <br>
+                                        <br>
+                                        Limited stock is available
+                                        
+                                    </p>
+                                </div><!--end of class="panel"-->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                         </div><!--end of shop-item-->
+                         <!--end of accordion-->
+                    </td>
+                    <td>
+                        <div class="shop-item">
+                            <div class="img-hover-zoom"><!--Zooms in on image when it's hovered upon-->
+                                <img src="images/grey.png" alt="greyscrunchie" class="img-thumbnail shop-item-image" id="allScrunchies">
+                            </div>
+
+                            <div id="shop-item-details">
+                                <span id="textUnderneathImages" class="shop-item-title"> Grey coloured scrunchie.</span>
+                                    <div class="shop-item-price"> <p><b>R30</b> </p></div>
+                                   
+                            </div><!--end of shop-item-details-->
+                            <!--Beginning of accordion-->
+                            <button class="accordion">Click for more information</button>
+                                <div class="panel">
+                                    <p id="accordionText">
+                                        This is a grey coloured scrunchie.<br>
+                                        The material is soft. 
+                                        <br>
+                                        <br>
+                                        Limited stock is available
+                                        
+                                    </p>
+                                </div><!--end of class="panel"-->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                         </div><!--end of shop-item-->
+                         <!--end of accordion-->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="shop-item">
+                            <div class="img-hover-zoom"><!--Zooms in on image when it's hovered upon-->
+                             <img src="images/pink.png" alt="pinkscrunchie" class="img-thumbnail shop-item-image" id="allScrunchies">
+                            </div>
+
+                            <div id="shop-item-details">
+                                <span id="textUnderneathImages" class="shop-item-title"> Pink coloured scrunchie.      </span>                          
+                                <div class="shop-item-price"> <p><b>R30</b></p></div>
+                                    
+                            </div><!--end of shop-item-details-->
+                            <!--Beginning of accordion-->
+                            <button class="accordion">Click for more information</button>
+                                <div class="panel">
+                                    <p id="accordionText">
+                                        This is a pink coloured scrunchie.<br>
+                                        The material is soft. 
+                                        <br>
+                                        <br>
+                                        Limited stock is available
+                                        
+                                    </p>
+                                </div><!--end of class="panel"-->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                         </div><!--end of shop-item-->
+                         <!--end of accordion-->
+                    </td>
+
+                    <td>
+                        <div class="shop-item">
+                            <div class="img-hover-zoom"><!--Zooms in on image when it's hovered upon-->
+                                <img src="images/navy.png" class="img-thumbnail shop-item-image" alt="navyscrunchie" id="allScrunchies">
+                            </div>
+
+                            <div id="shop-item-details">
+                                <span id="textUnderneathImages" class="shop-item-title">Navy coloured scrunchie</span>.<br>
+                                    <div class="shop-item-price"><p> <b>R30</b> </p> </div>
+                                    
+                            </div><!--end of shop-item-details-->
+                            <!--Beginning of accordion-->
+                            <button class="accordion">Click for more information</button>
+                                <div class="panel">
+                                    <p id="accordionText">
+                                        This is a navy coloured scrunchie.<br>
+                                        The material is hard. 
+                                        <br>
+                                        <br>
+                                        Limited stock is available
+                                        
+                                    </p>
+                                </div><!--end of class="panel"-->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                         </div><!--end of shop-item-->
+                         <!--end of accordion-->
+                    </td>
+
+                    <td>
+                        <div class="shop-item">
+                        <div class="img-hover-zoom"><!--Zooms in on image when it's hovered upon-->
+                            <img src="images/khaki.png" alt="khakiscrunchie" class="img-thumbnail shop-item-image" id="allScrunchies">
+                        </div>
+
+                         <div id="shop-item-details">
+                            <span id="textUnderneathImages" class="shop-item-title"> Khaki coloured scrunchie.</span>
+                                <br>
+                                <div class="shop-item-price"><p><b>R30</b></p></div>
+                                
+                        </div><!--end of shop-item-details-->
+                        <!--beginning of accordion-->
+                        <button class="accordion">Click for more information</button>
+                                <div class="panel">
+                                    <p id="accordionText">
+                                        This is a khaki coloured scrunchie.<br>
+                                        The material is hard. 
+                                        <br>
+                                        <br>
+                                        Limited stock is available
+                                        
+                                    </p>
+                                </div><!--end of class="panel"-->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div><!--end of shop-item-->
+                        <!--end of accordion-->
+                    </td>
+                    <td>
+                        <div class="shop-item">
+                        <div class="img-hover-zoom"><!--Zooms in on image when it's hovered upon-->
+                            <img src="images/whitepink.png" alt="floralscrunchie" class="img-thumbnail shop-item-image" id="allScrunchies">
+                        </div>
+                        <div id="shop-item-details">
+                             <span id="textUnderneathImages" class="shop-item-title"> White and pink floral pattern scrunchie.</span>
+                                <br>
+                               <div class="shop-item-price"><p> <b>R30</b></p></div>
+                                
+                        </div><!--end of shop-item-details-->
+                        <!--beginning of accordion-->
+                        <button class="accordion">Click for more information</button>
+                                <div class="panel">
+                                    <p id="accordionText">
+                                        This is a white and pink scrunchie with a floral pattern.<br>
+                                        The material is hard. 
+                                        <br>
+                                        <br>
+                                        Limited stock is available
+                                        
+                                    </p>
+                                </div><!--end of class="panel"-->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div><!--end of shop-item-->
+                        <!--end of accordion-->
+                    </td>
+                </tr>
+                <tr>
+                    <th class="h3" colspan="2" id="GroupB"><b> Group B </b>
+                    </th><!--Title of second section in table-->
+                </tr>
+                <tr>
+                    <td>
+                        <div class="shop-item">
+                        <div class="img-hover-zoom"><!--Zooms in on image when it's hovered upon-->
+                            <img src="images/white.png" alt="whitescrunchie" class="img-thumbnail shop-item-image" id="allScrunchies">
+                        </div>
+
+                        <div id="shop-item-details">
+                            <span id="textUnderneathImages" class="shop-item-title">White coloured velvet scrunchie</span>
+                                <br>
+                                <div class="shop-item-price"><p><b>R40</b></p></div>
+                                
+                            </div><!--end of shop-item-details-->
+                            <!--beginning of accordion-->
+                            <button class="accordion">Click for more information</button>
+                                <div class="panel">
+                                    <p id="accordionText">
+                                        This is a white coloured scrunchie.<br>
+                                        The material is velvet. 
+                                        <br>
+                                        <br>
+                                        Limited stock is available
+                                        
+                                    </p>
+                                </div><!--end of class="panel"-->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div><!--end of shop-item-->
+                            <!--end of accordion-->
+                        
+                    </td>
+                    <td>
+                        <div class="shop-item">
+                        <div class="img-hover-zoom"><!--Zooms in on image when it's hovered upon-->
+                            <img src="images/champagne.png" alt="champagnescrunchie" class="img-thumbnail shop-item-image" id="allScrunchies">
+                        </div>
+
+                        <div id="shop-item-details">
+                            <span id="textUnderneathImages" class="shop-item-title"> Champagne coloured satin srunchie</span>
+                                <br>
+                               <div class="shop-item-price"> <p><b>R40</b></p></div>
+                                
+                        </div><!--end of shop-item-details-->
+                        <!--beginning of accordion-->
+                        <button class="accordion">Click for more information</button>
+                                <div class="panel">
+                                    <p id="accordionText">
+                                        This is a champagne coloured scrunchie.<br>
+                                        The material is soft and shiny. 
+                                        <br>
+                                        <br>
+                                        Limited stock is available                                       
+                                    </p>
+                                     <!--end of accordion-->
+                                </div><!--end of class="panel"-->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div><!--end of shop-item-->
+                       </div><!--end of shop-items-->
+                    </td>
+                </tr>
+            </tbody>
+
+
+        </table><!--End of table-->
+        <!--Cart -->
+        <section class="container content-section">
+            <h2 class="section-header display-3" id="cart">CART</h2>
+            <hr>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <span class=> VAT 15%</span><br>
+                <strong class="cart-total-discount">Discount</strong>
+                 <span class="cart-discount-price">R0</span><br>
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">R0</span>
+                
+            </div>
+
+
+
+<hr>
+<h5 id="ourAddress"><b>Our address:</b><br><!--Contains adress of the business-->
+            Lensweg 14 Delville Germiston 1401</h5>
+        <h1 class="display-4">Order form</h1>
+
+
+        <!--<form>--><!--Form starts here-->
+            <div id="orderForm">
+                <div class="form-group row">
+                    <label for="exampleFormControlInput1" class="col-sm-2 col-form-label"><b>Email address</b></label>
+                    <div class="col-sm-8">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                </div>
+                <!-- Input "text" group(First Name & Last Name)-->
+                <div class="form-group">
+                    
+                    <div class="form-group row">
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                </div>
+                    
+                        <div class="form-group">
+                        <form name="Discount">
+                <label class="control-label"><b>If you are a first time client please select the the button below.<br></b></label>
+                <div class="form-row">
+                    <div class="col-sm-2">
+                        <div class="radio-inline form-check-inline">
+                            <label class="radio-inline" class="discount">
+                                <input type="radio" name="discount" class="discount" value="yes">
+                                Yes
+                            </label>
+                        </div><!--end of div class="radio-inline"-->
+                        <div class="radio-inline form-check-inline">
+                                <label>
+                                    <input type="radio" name="discount" class="discount" value="no">
+                                    No
+                                </label>
+                            </div>
+                            <button class="btn btn-primary btn-shipping" type="button"
+                                onclick="getDiscountValue('discount')">Update total</button>
+                    </div><!--end of col-sm-2-->
+                </div><!--end of form row-->
+            
+        </form><!--end of discount-->
+</div>
+                            
+                            
+                <!--Radio Group(checks if they want a courier service)-->
+                <div class="form-group">
+                   <form name ="Delivery">
+                    <label class="control-label"><b>Do you want to make use of our delivery service? We use <a href="http://www.fastway.co.za/">Fastway Couriers</a><br>(The delivery fee is R70)</b> </label><!--Hyperlink to the courier page-->
+                    <div class="form-row">
+                        <div class="col-sm-2">
+                            <div class="radio-inline form-check-inline">
+                                <label class="radio-inline" class="delivery"  value="yes">
+                                    <input type="radio" name="delivery" value="yes" checked><!--checked means"yes" is the default option-->
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="radio-inline form-check-inline">
+                                <label>
+                                    <input type="radio" name="delivery" class="delivery" value="no">
+                                    No
+                                </label>
+                            </div>
+                            <button class="btn btn-primary btn-shipping" type="button"
+                                onclick="getDeliveryValue('delivery')">Update total</button>
+                        </div>
+                    </div>
+
+            </form>
+        </div>
+                    <!--Radio Groups end where they select if they want delivery-->
+                        
+
+
+
+
+            <button class="btn btn-primary btn-purchase" type="button" id="purchaseBtn">PURCHASE</button>
+        </section>
+<!--end of cart-->
+
+    </div>
+
+</body>
+<script>
+
+</script>
+
+</html>
